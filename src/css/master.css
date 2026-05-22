@@ -19,7 +19,7 @@ background-color: #6F70CE;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.97'%3E%3Ccircle fill='%236F70CE' cx='50' cy='0' r='50'/%3E%3Cg fill='%236a6ac8' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%236565c2' cx='50' cy='100' r='50'/%3E%3Cg fill='%23605fbc' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%235b5ab6' cx='50' cy='200' r='50'/%3E%3Cg fill='%235654b0' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23514faa' cx='50' cy='300' r='50'/%3E%3Cg fill='%234c49a4' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%2347449e' cx='50' cy='400' r='50'/%3E%3Cg fill='%23423f98' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%233d3a92' cx='50' cy='500' r='50'/%3E%3Cg fill='%2338348d' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23332f87' cx='50' cy='600' r='50'/%3E%3Cg fill='%232e2a81' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2329257b' cx='50' cy='700' r='50'/%3E%3Cg fill='%23232076' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231e1b70' cx='50' cy='800' r='50'/%3E%3Cg fill='%2317166b' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23111165' cx='50' cy='900' r='50'/%3E%3Cg fill='%23080c5f' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300075A' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
 background-attachment: fixed;
 background-size: contain;
-    color: #000000;
+    color: #ffffff;
     display: flex;
     font-family: Poppins;
     font-weight: 500;
@@ -124,7 +124,7 @@ main {
         a:is(:link, :visited) {
             background-color: #68686899;
             border-radius: 8rem;
-            color: #000000;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: start;
@@ -177,7 +177,7 @@ main {
         h2 {
             background-color: #fff9;
             border-radius: 0.4rem;
-            color: #000;
+            color: #ffffff;
             padding: 0.6rem;
             position: relative;
             margin: 0;
