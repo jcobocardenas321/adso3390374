@@ -34,6 +34,13 @@ background-size: contain;
         background-size: contain;
     }
 
+    &.html {
+        background-color: #EE6429;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.8'%3E%3Ccircle fill='%23EE6429' cx='50' cy='0' r='50'/%3E%3Cg fill='%23ef6027' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f05c25' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f05723' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f15321' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f24e1f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f34a1d' cx='50' cy='300' r='50'/%3E%3Cg fill='%23f4451b' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f44019' cx='50' cy='400' r='50'/%3E%3Cg fill='%23f53c17' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f63715' cx='50' cy='500' r='50'/%3E%3Cg fill='%23f73213' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f82c11' cx='50' cy='600' r='50'/%3E%3Cg fill='%23f9270f' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23fa220d' cx='50' cy='700' r='50'/%3E%3Cg fill='%23fa1d0b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23fb1708' cx='50' cy='800' r='50'/%3E%3Cg fill='%23fc1106' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23fd0c04' cx='50' cy='900' r='50'/%3E%3Cg fill='%23fe0602' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FF0000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: contain;
+    }
+
     /* button home */
     a:is(:link, visited) {
         &.btn-home {
@@ -123,6 +130,28 @@ main {
         align-items: center;
         flex-direction: column;
         gap: 0.6rem;
+        &.submenu {
+            a:is(:link, :visited) {
+                span {
+                    background-color: #EE6429;
+                    font-size: 1rem;
+                    height: 50px;
+                    width: 50px;
+                }
+                aside {
+                    h4 {
+                        font-weight: normal;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            a:is(:hover) {
+                background-color: #EE6429;
+                span { 
+                    background-color: #fff9;
+                }
+            }
+        }
         a:is(:link, :visited) {
             background-color: #68686899;
             border-radius: 8rem;
