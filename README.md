@@ -13,7 +13,7 @@
 |03. |CSS        |Look & Feel - Cascading Style Sheet |
 |04. |JavaScript |Behavior - Programing Language      |
 
-![profile](/src/imgs/profile.jpeg)
+![profile](/src/imgs/profile.jpg)
 **jacobo cardenas cardenas**
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
