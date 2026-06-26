@@ -84,6 +84,12 @@ main {
             font-size: 2.6rem;
             text-align: center;
         }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
         h4 {
             font-weight: 300;
             text-align: center;
