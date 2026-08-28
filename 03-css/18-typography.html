@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18-typography</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        .caja-ejemplo {
+            border: 2px solid #333;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .color-ejemplo .color1 { color: #ef4444; }
+        .color-ejemplo .color2 { color: #22c55e; }
+        .color-ejemplo .color3 { color: #6366f1; }
+        .color-ejemplo .color4 { color: #f59e0b; }
+        .color-ejemplo .color5 { color: #ec4899; }
+
+        .family-ejemplo .serif { font-family: Georgia, 'Times New Roman', serif; }
+        .family-ejemplo .sans-serif { font-family: Arial, Helvetica, sans-serif; }
+        .family-ejemplo .monospace { font-family: 'Courier New', Courier, monospace; }
+        .family-ejemplo .cursive { font-family: 'Comic Sans MS', cursive; }
+        .family-ejemplo .fantasy { font-family: 'Papyrus', fantasy; }
+
+        .size-ejemplo .small { font-size: 12px; }
+        .size-ejemplo .medium { font-size: 18px; }
+        .size-ejemplo .large { font-size: 24px; }
+        .size-ejemplo .xlarge { font-size: 32px; }
+        .size-ejemplo .xxlarge { font-size: 48px; }
+
+        .weight-ejemplo .thin { font-weight: 100; }
+        .weight-ejemplo .light { font-weight: 300; }
+        .weight-ejemplo .regular { font-weight: 400; }
+        .weight-ejemplo .bold { font-weight: 700; }
+        .weight-ejemplo .black { font-weight: 900; }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>18-typography</h1>
+            <ul>
+                <li>Color</li>
+                <li>Family</li>
+                <li>Size</li>
+                <li>Weight</li>
+            </ul>
+        </header>
+        <section>
+            <h4>Color</h4>
+            <div class="caja-ejemplo color-ejemplo">
+                <p class="color1"> Texto en rojo (#ef4444)</p>
+                <p class="color2"> Texto en verde (#22c55e)</p>
+                <p class="color3"> Texto en azul (#6366f1)</p>
+                <p class="color4"> Texto en amarillo (#f59e0b)</p>
+                <p class="color5"> Texto en rosa (#ec4899)</p>
+            </div>
+
+            <h4>Family</h4>
+            <div class="caja-ejemplo family-ejemplo">
+                <p class="serif">Serif - Georgia, Times New Roman</p>
+                <p class="sans-serif">Sans-serif - Arial, Helvetica</p>
+                <p class="monospace">Monospace - Courier New, Courier</p>
+                <p class="cursive">Cursive - Comic Sans MS</p>
+                <p class="fantasy">Fantasy - Papyrus</p>
+            </div>
+
+            <h4>Size</h4>
+            <div class="caja-ejemplo size-ejemplo">
+                <p class="small">Small - 12px</p>
+                <p class="medium">Medium - 18px</p>
+                <p class="large">Large - 24px</p>
+                <p class="xlarge">X-Large - 32px</p>
+                <p class="xxlarge">XX-Large - 48px</p>
+            </div>
+
+            <h4>Weight</h4>
+            <div class="caja-ejemplo weight-ejemplo">
+                <p class="thin">Thin - 100 (muy delgado)</p>
+                <p class="light">Light - 300 (ligero)</p>
+                <p class="regular">Regular - 400 (normal)</p>
+                <p class="bold">Bold - 700 (negrita)</p>
+                <p class="black">Black - 900 (muy negrita)</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-text</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        .caja-ejemplo {
+            border: 2px solid #333;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .align-ejemplo .left { text-align: left; }
+        .align-ejemplo .center { text-align: center; }
+        .align-ejemplo .right { text-align: right; }
+        .align-ejemplo .justify { text-align: justify; }
+
+        .lineheight-ejemplo .lh1 { line-height: 1; }
+        .lineheight-ejemplo .lh2 { line-height: 2; }
+        .lineheight-ejemplo .lh3 { line-height: 3; }
+
+        .decoration-ejemplo .underline { text-decoration: underline; }
+        .decoration-ejemplo .overline { text-decoration: overline; }
+        .decoration-ejemplo .line-through { text-decoration: line-through; }
+        .decoration-ejemplo .none { text-decoration: underline overline line-through; }
+
+
+        .transform-ejemplo .uppercase { text-transform: uppercase; }
+        .transform-ejemplo .lowercase { text-transform: lowercase; }
+        .transform-ejemplo .capitalize { text-transform: capitalize; }
+
+        .indent-ejemplo .indent1 { text-indent: 20px; }
+        .indent-ejemplo .indent2 { text-indent: 40px; }
+        .indent-ejemplo .indent3 { text-indent: 60px; }
+
+        .spacing-ejemplo .word-spacing { word-spacing: 10px; }
+        .spacing-ejemplo .letter-spacing { letter-spacing: 3px; }
+        .spacing-ejemplo .word-spacing2 { word-spacing: 20px; }
+        .spacing-ejemplo .letter-spacing2 { letter-spacing: 6px; }
+    </style>
+
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>19-text</h1>
+            <ul>
+                <li>Align</li>
+                <li>Line Height</li>
+                <li>Decoration</li>
+                <li>Transform</li>
+                <li>Indent</li>
+                <li>Spacing (word/letter)</li>
+            </ul>
+        </header>
+        <section>
+            <h4>Align</h4>
+            <div class="caja-ejemplo align-ejemplo">
+                <p class="left">Left</p>
+                <p class="center">Center</p>
+                <p class="right">Right</p>
+                <p class="justify">Justify - Texto justificado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed unde qui laborum optio.</p>
+            </div>
+
+            <h4>Line Height</h4>
+            <div class="caja-ejemplo lineheight-ejemplo">
+                <p class="lh1">Line-height: 1 (muy ajustado)</p>
+                <p class="lh2">Line-height: 2 (espaciado normal)</p>
+                <p class="lh3">Line-height: 3 (muy separado)</p>
+            </div>
+
+            <h4>Decoration</h4>
+            <div class="caja-ejemplo decoration-ejemplo">
+                <p class="underline">Underline - Subrayado</p>
+                <p class="overline">Overline - Línea arriba</p>
+                <p class="line-through">Line-through - Tachado</p>
+                <p class="none">Lorem, ipsum dolor</p>
+            </div>
+
+            <h4>Transform</h4>
+            <div class="caja-ejemplo transform-ejemplo">
+                <p class="uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <h4>Indent</h4>
+            <div class="caja-ejemplo indent-ejemplo">
+                <p class="indent1">Indent: 20px</p>
+                <p class="indent2">Indent: 40px</p>
+                <p class="indent3">Indent: 60px</p>
+            </div>
+
+            <h4>Spacing</h4>
+            <div class="caja-ejemplo spacing-ejemplo">
+                <p class="word-spacing">Word-spacing: 10px - Espacio entre palabras</p>
+                <p class="word-spacing2">Word-spacing: 20px - Más espacio entre palabras</p>
+                <p class="letter-spacing">Letter-spacing: 3px - Espacio entre letras</p>
+                <p class="letter-spacing2">Letter-spacing: 6px - Más espacio entre letras</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
