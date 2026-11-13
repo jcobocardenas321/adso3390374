@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45-challenge-grid</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        html,
+        body.css {
+            background: #0b1d3a url("imgs/45-challenge/fondo.jpeg") center / cover fixed no-repeat !important;
+        }
+
+        .mainmenu {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+        }
+
+        .vsco {
+            flex: 1 1 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 24px 0 60px;
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            width: min(92vw, 700px);
+            aspect-ratio: 1 / 1.05;
+            padding: 10px;
+            box-sizing: border-box;
+            background: #a9c4f5;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
+        }
+
+        .gallery-1 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "a b c"
+                "d b e"
+                "f f g";
+        }
+
+        .gallery-2 {
+            width: min(92vw, 860px);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "f f f g"
+                "a a b c"
+                "a a d d"
+                "e h d d";
+        }
+
+        .gallery figure {
+            margin: 0;
+            overflow: hidden;
+            border: 3px solid #fff;
+            border-radius: 14px;
+            background: #fff;
+            min-width: 0;
+            min-height: 0;
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .4s ease;
+        }
+
+        .gallery figure:hover img { transform: scale(1.08); }
+
+        .a { grid-area: a; }
+        .b { grid-area: b; }
+        .c { grid-area: c; }
+        .d { grid-area: d; }
+        .e { grid-area: e; }
+        .f { grid-area: f; }
+        .g { grid-area: g; }
+        .h { grid-area: h; }
+    </style>
+</head>
+<body class="css">
+    <a href="index.html" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+            <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+        </svg>
+    </a>
+    <main>
+        <header class="mainmenu">
+            <h1>45-challenge-grid</h1>
+            <h4>IREGULAR GALLERY</h4>
+        </header>
+
+        <div class="vsco">
+            <div class="gallery gallery-1">
+                <figure class="a"><img src="imgs/45-challenge/drum.jpeg" alt="Drum"></figure>
+                <figure class="b"><img src="imgs/45-challenge/east_blue.jpeg" alt="East Blue"></figure>
+                <figure class="c"><img src="imgs/45-challenge/whole_cake.jpeg" alt="Whole Cake"></figure>
+                <figure class="d"><img src="imgs/45-challenge/water_seven.jpeg" alt="Water Seven"></figure>
+                <figure class="e"><img src="imgs/45-challenge/cp9.jpeg" alt="CP9"></figure>
+                <figure class="f"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
+                <figure class="g"><img src="imgs/45-challenge/thriller_bark.jpeg" alt="Thriller Bark"></figure>
+            </div>
+
+            <div class="gallery gallery-2">
+                <figure class="a"><img src="imgs/45-challenge/drum.jpeg" alt="Drum"></figure>
+                <figure class="b"><img src="imgs/45-challenge/east_blue.jpeg" alt="East Blue"></figure>
+                <figure class="c"><img src="imgs/45-challenge/whole_cake.jpeg" alt="Whole Cake"></figure>
+                <figure class="d"><img src="imgs/45-challenge/water_seven.jpeg" alt="Water Seven"></figure>
+                <figure class="e"><img src="imgs/45-challenge/cp9.jpeg" alt="CP9"></figure>
+                <figure class="f"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
+                <figure class="g"><img src="imgs/45-challenge/thriller_bark.jpeg" alt="Thriller Bark"></figure>
+                <figure class="h"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
