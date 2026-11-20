@@ -18,30 +18,28 @@
         }
 
         .vsco {
-            flex: 1 1 100%;
-            width: 100%;
+            --w: min(92vw, 700px);
             display: flex;
             flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            padding: 24px 0 60px;
-            box-sizing: border-box;
-        }
-
-        .gallery {
-            display: grid;
-            gap: 10px;
-            width: min(92vw, 700px);
-            aspect-ratio: 1 / 1.05;
+            gap: 30px;
+            width: var(--w);
+            margin: 24px calc(50% - var(--w) / 2) 60px;
             padding: 10px;
             box-sizing: border-box;
             background: #a9c4f5;
             box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
         }
 
+        .gallery {
+            display: grid;
+            gap: 10px;
+            width: 100%;
+        }
+
         .gallery-1 {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            height: calc((var(--w) - 20px) * 1.0618);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-rows: repeat(3, minmax(0, 1fr));
             grid-template-areas:
                 "a b c"
                 "d b e"
@@ -49,17 +47,17 @@
         }
 
         .gallery-2 {
-            width: min(92vw, 860px);
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+            height: calc((var(--w) - 20px) * 0.8);
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-rows: repeat(3, minmax(0, 1fr));
             grid-template-areas:
-                "f f f g"
                 "a a b c"
                 "a a d d"
-                "e h d d";
+                "e f d d";
         }
 
         .gallery figure {
+            position: relative;
             margin: 0;
             overflow: hidden;
             border: 3px solid #fff;
@@ -69,10 +67,13 @@
             min-height: 0;
         }
 
-        .gallery img {
+        .gallery figure img {
+            position: absolute !important;
+            inset: 0 !important;
             display: block;
-            width: 100%;
-            height: 100%;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
             object-fit: cover;
             transition: transform .4s ease;
         }
@@ -86,7 +87,6 @@
         .e { grid-area: e; }
         .f { grid-area: f; }
         .g { grid-area: g; }
-        .h { grid-area: h; }
     </style>
 </head>
 <body class="css">
@@ -106,7 +106,7 @@
                 <figure class="a"><img src="imgs/45-challenge/drum.jpeg" alt="Drum"></figure>
                 <figure class="b"><img src="imgs/45-challenge/east_blue.jpeg" alt="East Blue"></figure>
                 <figure class="c"><img src="imgs/45-challenge/whole_cake.jpeg" alt="Whole Cake"></figure>
-                <figure class="d"><img src="imgs/45-challenge/water_seven.jpeg" alt="Water Seven"></figure>
+                <figure class="d"><img src="imgs/45-challenge/whater_seven.jpeg" alt="Water Seven"></figure>
                 <figure class="e"><img src="imgs/45-challenge/cp9.jpeg" alt="CP9"></figure>
                 <figure class="f"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
                 <figure class="g"><img src="imgs/45-challenge/thriller_bark.jpeg" alt="Thriller Bark"></figure>
@@ -116,11 +116,9 @@
                 <figure class="a"><img src="imgs/45-challenge/drum.jpeg" alt="Drum"></figure>
                 <figure class="b"><img src="imgs/45-challenge/east_blue.jpeg" alt="East Blue"></figure>
                 <figure class="c"><img src="imgs/45-challenge/whole_cake.jpeg" alt="Whole Cake"></figure>
-                <figure class="d"><img src="imgs/45-challenge/water_seven.jpeg" alt="Water Seven"></figure>
+                <figure class="d"><img src="imgs/45-challenge/whater_seven.jpeg" alt="Water Seven"></figure>
                 <figure class="e"><img src="imgs/45-challenge/cp9.jpeg" alt="CP9"></figure>
-                <figure class="f"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
-                <figure class="g"><img src="imgs/45-challenge/thriller_bark.jpeg" alt="Thriller Bark"></figure>
-                <figure class="h"><img src="imgs/45-challenge/wano.jpeg" alt="Wano"></figure>
+                <figure class="f"><img src="imgs/45-challenge/thriller_bark.jpeg" alt="Thriller Bark"></figure>
             </div>
         </div>
     </main>
